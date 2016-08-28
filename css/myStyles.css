@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+.container{
+	width: 100%;
+	/*max-width: 1000px;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+header {
+	height: auto;
+	color: #fff;
+	background: #CACACA;
+}
+header .nav {
+	background: #843D94;
+	padding: 15px;
+	width: 100%;
+	height: 40px;
+}
+.logo {
+	width: 30%;
+	display: inline;
+	font-family: 'Poppins', Sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	float: left;
+	/*border-right: 1px solid #D8C4DF;*/
+}
+.logo span {
+	text-transform: none;
+	font-weight: 300;
+	opacity: .7;
+	font-size: 20px;
+}
+.div_menu {
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+    box-sizing: border-box;
+}
+.sign_in {
+	width: 10%;
+	float: left;
+   padding-top: 10px;
+}
+.sign_in a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins', Sans-serif;
+	font-weight: 300;
+}
+.sign_in a:hover {
+	color: #D8C4DF;
+}
+.mostrar_menu a {
+	color: #fff;
+	text-decoration: none;
+}
+.mostrar_menu a:hover {
+	color: #D8C4DF;
+}
+.mostrar_menu span{
+	font-size: 40px;
+	float: right;
+}
+.menu {
+	display: none;
+	background: #843D94;
+	text-align: left;
+	padding: 5px;
+}
+.menu .menu_item{
+	padding: 8px 20px;
+	border-bottom: 1px solid #A676B6;
+}
+.menu .menu_link{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', Sans-serif;
+}
+.menu_link:hover {
+	color: #D8C4DF;
+}
+.banner img {
+	width: 100%;
+	height:auto;
+}
+
+/*Section*/
+section {
+	text-align: center;
+	background: #CACACA;
+	border-bottom: 1px solid #9A9A9A;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+	float: right;
+}
+.experiences, .servicios {
+	
+}
+.experience, .servicio, .noticias {
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.experience_img img {
+	border-radius: 50%;
+}
+.experience_title, .noticia_title {
+	font-family: 'Arimo', Sans-serif;
+	color: #843D94;
+	font-weight: 400;
+}
+.experience_subtitle {
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #656565;
+}
+.experience p {
+	color: #9A9A9A;
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 300;
+	padding: 10px;
+}
+.experience_button a, .servicio_button a {
+	padding: 10px 30px;
+	color: #000;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', Sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	border: 1px solid #843D94;
+
+}
+.experience_button a:hover, .servicio_button a:hover, .noticia_button a:hover {
+	color: #843D94;
+}
+.experience_button, .servicio_button, .noticia_button {
+	padding: 10px;
+}
+.servicio_title {
+	font-family: 'Source Sans Pro', Sans-serif;
+	text-transform: uppercase;
+	color: #843D94;
+	padding-bottom: 40px;
+}
+.servicio_img span {
+	font-size: 50px;
+	color: #fff;
+	background: #A676B6;
+	border-radius: 50%;
+	padding: 12px;
+}
+.servicio_img {
+	padding-bottom: 30px;
+}
+
+.servicios article {
+	color: #656565;
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+.noticias_sign p{
+	color: #656565;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+.noticia_button a{
+	padding: 10px 30px;
+	color: #000;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', Sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	border: 1px solid #843D94;
+}
+.noticias_links .noticia_title {
+	text-align: left;
+}
+.noticias_sign {
+	text-align: left;
+}
+.noticias_sign .noticia_button {
+	padding-bottom: 30px;
+}
+.noticias_menu {
+	padding:10px 0;
+	text-align: left;
+}
+.noticias_menu a{
+	text-decoration: none;
+	color: #000;
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+.noticias_menu ul li {
+	line-height: 2;
+}
+.noticias_menu a:hover {
+	color: #582862;
+	text-decoration: underline;
+}
+.noticia_links_button {
+	text-align: left;
+}
+.noticia_links_button a{
+	color: #000;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', Sans-serif;
+	font-weight: 700;
+}
+.noticia_links_button a:hover {
+	color: #582862;
+}
+footer {
+	width: 100%;
+    float: right;
+	background: #843D94;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.lista_links ul {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	padding-bottom: 10px;
+}
+.lista_links ul:last-child {
+	display: none;
+}
+.lista_links ul li{
+	line-height: 2;
+}
+.lista_links a {
+	text-decoration: none;
+	color: #A676B6;
+	font-family: 'Source Sans Pro', Sans-serif;
+}
+.lista_links a:hover {
+	text-decoration: underline;
+	color: #582862;
+}
+.select_links select{
+	width: 100%;
+	height: 40px;
+	color: #A676B6;
+	background: inherit;
+	border: 1px solid #A676B6;
+}
+.sociales {
+	height: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.sociales a {
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	border-radius: 50%;
+	background: #582862;
+	margin: 10px;
+	opacity: 0.7;
+}
+.sociales a:hover {
+	color: #C3A3CE;
+	font-size: 20px;
+}
+.copy_right {
+	padding-top: 10px;
+}
+p.creditos {
+	color: #fff;
+	text-align: center;
+	opacity: .7;
+}
+/* Tablet */
+@media screen and (min-width: 750px) {
+	.experiences .experience {
+		width: 33%;
+		float: left;
+	}
+	.servicio {
+		width: 50%;
+		float: left;
+	}
+	.servicio:nth-child(odd) {
+		border-right: 1px solid #9A9A9A;
+	}
+	.noticias_sign, .noticias_links {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+	.noticias_links {
+		padding-left: 20px;
+		border-left: 1px solid #9A9A9A;
+	}
+	
+}
+/*Web*/
+@media screen and (min-width: 1200px) {
+	.lista_links ul:last-child {
+		display: inline;
+	}
+	.select_links {
+		display: none;
+	}
+	.lista_links ul{
+		width: 33%;
+		padding-bottom: 20px;
+	}
+	.copy_right {
+		float: right;
+	}
+	.sociales {
+		float: left;
+		padding: 10px 0px;
+	}
+}
