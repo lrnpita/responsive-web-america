@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+.container{
+	width: 100%;
+	/*max-width: 1000px;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+header {
+	height: auto;
+	color: #fff;
+	background: #EBEBEB;
+}
+input {
+	width: 200px;
+	height: 28px;
+	border-radius: 3px;
+	border: 1px solid #9A9A9A;
+	color: #9A9A9A;
+	margin: 2px;
+}
+input[type=checkbox] {
+	width: 12px;
+	margin: 5px;
+	height: 10px;
+}
+input:focus {
+	border: 2px solid #1883D7;
+}
+label {
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+}
+.button_login_facebook, .button_login_google {
+	margin: 5px;
+	box-shadow: 1px 1px 2px #9A9A9A;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.button_login_facebook i, .button_login_google i {
+	padding-right: 5px;
+	border-right: 1px solid #9A9A9A;
+	line-height: 40px;
+}
+.button_login_facebook {
+	background: #3B5998;
+	padding: 10px;
+}
+.button_login_google {
+	background: #DD4B39;
+	padding: 10px 19px;
+}
+section {
+	text-align: center;
+	background: #EBEBEB;
+	border-bottom: 1px solid #9A9A9A;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+	float: right;
+}

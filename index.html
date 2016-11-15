@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="aplication">
 <head>
 	<title>Virgin America</title>
 	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="fonts.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-<div class="container">
+<div class="container" ng-controller="appController">
+<!-- <div ng-include="'header.html'"></div> -->
 	<header>
 		<div>
 			<div class="nav">
 				<nav>			
 					<div class="logo">
-						<div><h1>Virgin<span>america</span></h1></div>
+						<div><h1>Virgin<span>america</span></h1>
+						</div>
+					</div>
+					<div class="nav_menu">
+						<ul>
+							<li ng-repeat="m in menuItems"><a href={{m.link}}>{{m.name}}</a></li>
+						</ul>
 					</div>
 					<div class="div_menu">
 						<div class="mostrar_menu" id="mostrar_menu"><a href=""><span class="icon-menu"></span></a></div>
 					</div>
 					<div class="sign_in">
-						<h3><a href="#">Sing In</a></h3>
+						<h3><a href="#openModal">Sing In</a></h3>
 					</div>
 				</nav>
 			</div>
 		</div>
 		<div class="menu" id="menu">
 			<ul>
-				<li class="menu_item"><a class="menu_link" href="#">Home </a></li>
-				<li class="menu_item"><a class="menu_link" href="#">About us</a></li>
-				<li class="menu_item"><a class="menu_link" href="#">Services</a></li>
-				<li class="menu_item"><a class="menu_link" href="#">Contact us</a></li>
-				<li class="menu_item"><a class="menu_link" href="#">Menu Item</a></li>
+				<li class="menu_item" ng-repeat="m in menuItems"><a class="menu_link" href="#" >{{m}} </a></li>
 			</ul>
 		</div>
 		<div class="banner"><img src="img/banner.jpg"></div>
@@ -165,13 +169,13 @@
 		</div>
 	</div>
 </section>
-
+<!-- Footer-->
 <footer>
 	<div>
 		<div class="lista_links">
 			<ul>
 				<li><a href="#">Site Map</a></li>
-				<li><a href="#">Contact of Carriage</a></li>
+				<li><a href="#">Contract of Carriage</a></li>
 				<li><a href="#">Privacy Policy</a></li>
 				<li><a href="#">Blog</a></li>
 			</ul>
@@ -190,11 +194,8 @@
 		</div>
 		<div class="select_links">
 			<select>
-				<option class="options">More Options</option>
-				<option class="options"><a href="#">Press & Awards</a></option>
-				<option class="options"><a href="#">All News & Updates</a></option>
-				<option class="options"><a href="#">About us</a></option>
-				<option class="options"><a href="#">What is Elevate</a></option>
+				<option class="options" ng-repeat="opt in moreOptions">{{opt}}</option>
+				
 			</select>
 		</div>
 		<div class="sociales">
@@ -204,12 +205,43 @@
 			<a href="#" class="sociales_link icon-google-plus"></a>
 		</div>
 		<div class="copy_right">
-			<p class="creditos">Virgin America &copy; 2016 | Privacy Policy</p>
+			<p class="creditos">CopyRight &copy; 2016 | Lrnpita</p>
 		</div>
 	</div>
 </footer>
+
+<!--MODAL TO SIGN -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Log In</h2>
+		<div class="form_login">
+			<form>
+				<div><label for="userEmail">Email</label><input type="email" name="userEmail"/>
+				</div>
+				<div><label for="userPaswword">Password</label><input type="Password" name="userPaswword"/>
+				</div>
+				<div><input type="checkbox" name="RememberMe">Remember me</div>
+			</form>
+		</div>
+		<div class="form_login_socials">
+			<div><a href="#" class="button_login_facebook" ng-click="FBLogin()"><i class="sociales_link icon-facebook"></i> Login with Facebook</a>
+			</div>
+			<div><a href="#" class="button_login_google"><i class="sociales_link icon-google-plus"></i> Login with Google</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!--<div ng-view></div>
+-->
+
 </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.3.14/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/modulesAngular.js"></script>
 </body>
 </html>
